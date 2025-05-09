@@ -1,15 +1,24 @@
-# Virtual environment
+# ვირტუალური გარემო
 venv/
+env/
 
-# Python bytecode
+# Python cache
 __pycache__/
 *.py[cod]
+*.sqlite3
 
-# SQLite database
+# VSCode და PyCharm ფაილები
+.vscode/
+.idea/
+
+# Django secret keys
+*.env
+
+# ბაზის ფაილი 
 db.sqlite3
 
-# Django stuff:
-*.log
-
-# VS Code project settings
-.vscode/
+# მიგრაციები 
+**/migrations/*.pyc
+**/migrations/__pycache__/
+**/migrations/*.py
+!**/migrations/__init__.py
